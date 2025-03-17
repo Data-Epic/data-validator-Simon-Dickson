@@ -29,8 +29,8 @@ def test_validate_date(data_validator):
     data_validator.data = "2025/02/14"
     assert data_validator.validate_date() is True
 
-    data_validator.data = "2025-02-30"
-    assert data_validator.validate_date() is True
+    data_validator.data = "2025-02-29"
+    assert data_validator.validate_date() is False
 
 def test_validate_url(data_validator):
     data_validator.data = "https://example.com"
