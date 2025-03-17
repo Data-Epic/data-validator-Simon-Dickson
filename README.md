@@ -116,7 +116,7 @@ pip install simon-datavalidator
 Create a Python file (e.g., main.py) and import the package as follows:
 
 ```python
-from datavalidator import DataValidator
+from datavalidator.validator import DataValidator
 
 # Example usage with verbose mode enabled
 validator = DataValidator(verbose=True)
